@@ -1,0 +1,142 @@
+
+.main__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color:#F8FAFC;
+}
+
+.footer__one {
+  text-align: left;
+}
+.footer__one p{
+  font-size: 14.4px;
+  text-align: center;
+}
+.footer__one img {
+  width: 92px;
+  height: 78px;
+}
+.footerLinks {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footerLinks h5 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #94A3B8;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #090914;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footerLinks + .footerLinks {
+  margin-left: 20px;
+}
+
+hr {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #E2E8F0;
+}
+
+.copyright {
+  font-size: 0.8em;
+  color:#090914;
+  margin: auto;
+  
+}
+@media screen and (max-width: 768px) {
+  .main__footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footerLinks,
+  .footerLinks + .footerLinks {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .main__footer {
+    padding: 15px;
+  }
+
+  .footer__one img {
+    width: 72px;
+    height: 60px;
+  }
+
+  .footer__one p {
+    font-size: 12px;
+  }
+
+  .footerLinks {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .footerLinks h5 {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .footerLinks a {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .footerLinks + .footerLinks {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer__one img {
+    width: 80px;
+    height: 68px;
+  }
+
+  .footer__one p {
+    font-size: 13px;
+  }
+
+  .footerLinks {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .footerLinks h5 {
+    font-size: 13px; 
+    margin-bottom: 6px; 
+  }
+
+  .footerLinks a {
+    font-size: 11px; 
+    margin-bottom: 4px; 
+  }
+
+  .footerLinks + .footerLinks {
+    margin-left: 0; 
+    margin-bottom: 20px; 
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+ 
+}

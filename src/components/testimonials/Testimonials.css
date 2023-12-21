@@ -1,0 +1,140 @@
+/* Testimonials.css */
+
+/* Default styles */
+
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.left-testimonial {
+  flex: 0 0 45%;
+  margin-right: 20px;
+}
+
+.left-testimonial h3 {
+  color: #073d63;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.left-testimonial h6 {
+  color: #1d2939;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.left-testimonial p {
+  font-size: 1rem;
+}
+
+.right-testimonial {
+  flex: 0 0 55%;
+}
+
+.right-testimonial p {
+  color: #868686;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.name-image-testimonial {
+  display: flex;
+  align-items: center;
+}
+
+.name-image-testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.desc-testimonial {
+  color: #555;
+}
+
+.rating-testimonial {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rating-testimonial span {
+  color: #f1c40f;
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.testimonials__images {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.heading__tagOne {
+  color: #073d63;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+h3 {
+  color: #6a6a6a;
+}
+
+/* Media Queries for responsiveness */
+
+/* For smaller devices */
+@media screen and (max-width: 768px) {
+  .testimonial-section {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .left-testimonial,
+  .right-testimonial {
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  .left-testimonial,
+  .right-testimonial p {
+    font-size: 1rem;
+  }
+
+  .name-image-testimonial img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .heading__tagOne {
+    font-size: 20px;
+  }
+}
+
+/* For tablets and larger devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .left-testimonial {
+    flex: 0 0 40%;
+  }
+
+  .right-testimonial {
+    flex: 0 0 60%;
+  }
+
+  .name-image-testimonial img {
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
+  }
+}

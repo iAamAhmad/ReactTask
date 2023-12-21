@@ -1,0 +1,222 @@
+.booking__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.form__section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.form__row input,
+.form__row textarea {
+  flex: 1; 
+  margin-bottom: 10px; 
+  padding: 12px;
+  border: 1px solid rgb(224, 217, 217);
+  border-radius: 6px;
+  
+}
+
+.first p {
+  color: #09101D;
+  margin-left: 6px;
+}
+
+.map__section {
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+.payment__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: #073d63;
+}
+
+.payment__section p {
+  color: #073d63;
+}
+
+.payment__button,
+.payment__button--paypal,
+.book__button {
+  margin-right: 10px;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  line-height: 21.1px;
+}
+
+.payment__button {
+  align-content: center;
+  color: #073d63;
+}
+
+.payment__button--paypal {
+  color: #ffffff;
+  background-color: #72c9e8;
+  align-items: center;
+}
+
+.book__button {
+  background-color: rgb(128, 128, 234);
+  color: white;
+  border-radius: 6px;
+}
+
+.option__payment {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.heading__tag {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #073D63;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.heading__para {
+  color: #98A2B3;
+}
+
+.wait__div {
+  display: flex;
+  color: #073d63;
+  align-items: center;
+  background-color: #073d6333;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 3px;
+  width: 100%; 
+  margin-bottom: 8px;
+}
+
+.wait__div p {
+  color: #073D63;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.wait__div img {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .booking__form {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 10px; 
+  }
+
+  .form__section,
+  .map__section {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  .form__row input,
+  .form__row textarea {
+    width: 100%;
+  }
+
+  .payment__button,
+  .payment__button--paypal,
+  .book__button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .wait__div {
+    width: 100%;
+  }
+}
+/* Responsive styles */
+
+/* For smaller devices */
+@media screen and (max-width: 480px) {
+  .booking__form {
+    padding: 10px;
+  }
+
+  .form__row input,
+  .form__row textarea {
+    width: 80%;
+    margin-right: 0; 
+    margin: 10px;
+  }
+
+  .payment__button,
+  .payment__button--paypal,
+  .book__button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+/* For medium-sized devices */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .booking__form {
+    padding: 15px;
+  }
+
+  .form__section,
+  .map__section {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  .form__row input,
+  .form__row textarea {
+    width: calc(50% - 5px); 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+  }
+
+  .payment__button,
+  .payment__button--paypal,
+  .book__button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .wait__div {
+    width: 100%;
+  }
+}
+
+/* For larger devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .form__row input,
+  .form__row textarea {
+    width: calc(33.33% - 10px); 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+  }
+}

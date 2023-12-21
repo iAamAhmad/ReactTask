@@ -1,0 +1,84 @@
+
+
+
+
+.ad-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.ad-left,
+.ad-right {
+  flex: 0 0 48%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.ad-left img,
+.ad-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #344054;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #761853;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .ad-left,
+  .ad-right {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .ad-right {
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ad-left,
+  .ad-right {
+    flex: 0 0 48%;
+    margin-bottom: 0;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+ 
+}
